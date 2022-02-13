@@ -12,6 +12,59 @@
 			<ContextMenu name="ДекорацияСуммаКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="ДекорацияСуммаРасширеннаяПодсказка" id="3"/>
 		</LabelDecoration>
+		<Table name="дсСделки" id="4">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>дсСделки</DataPath>
+			<RowPictureDataPath>дсСделки.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="дсСделкиКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="дсСделкиКоманднаяПанель" id="6"/>
+			<ExtendedTooltip name="дсСделкиРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="дсСделкиСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>дсСделки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="дсСделкиСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="дсСделкиСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="дсСделкиСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>дсСделки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="дсСделкиСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="дсСделкиСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="дсСделкиУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>дсСделки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="дсСделкиУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="дсСделкиУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="дсСделкиУчастникСделки" id="17">
+					<DataPath>дсСделки.УчастникСделки</DataPath>
+					<ContextMenu name="дсСделкиУчастникСделкиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="дсСделкиУчастникСделкиРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -19,6 +72,38 @@
 				<v8:Type>cfg:DataProcessorObject.ЛичныйСчет</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="дсСделки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<MainTable>AccumulationRegister.Сделки.Turnovers</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
 		</Attribute>
 	</Attributes>
 </Form>
