@@ -11,7 +11,7 @@
 		</Item>
 		<Item>
 			<Form>Catalog.Проекты.Form.ФормаПросмотраКапитализации</Form>
-			<Height>10</Height>
+			<Height>5</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>

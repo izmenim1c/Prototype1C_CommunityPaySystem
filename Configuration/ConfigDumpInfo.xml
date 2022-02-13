@@ -782,11 +782,11 @@
 		<Metadata name="CommonPicture.ЭлектронноеПисьмо.Picture" id="f64de21f-5a7c-4a1a-a929-07fc53049f6c.0" configVersion="99e97dc378de1a4292c2928e017e22c600000000"/>
 		<Metadata name="CommonTemplate.ПолучениеДереваОбработчиковОбновления" id="88b879b7-1bb3-4478-b569-35bdb5c56939" configVersion="8a8518eac0715545974933581e27873800000000"/>
 		<Metadata name="CommonTemplate.ПолучениеДереваОбработчиковОбновления.Template" id="88b879b7-1bb3-4478-b569-35bdb5c56939.0" configVersion="d75336dff3db3a4c9de5367e191218df00000000"/>
-		<Metadata name="Configuration.ОбщественныйФонд" id="aba44bd5-5f4e-41e2-b24b-acdd3f3a912b" configVersion="eb0fb5992d26af48bf2d649533c2ca4a00000000"/>
+		<Metadata name="Configuration.ОбщественныйФонд" id="aba44bd5-5f4e-41e2-b24b-acdd3f3a912b" configVersion="0daaa4eb0844a8419be7d5ac89dc813800000000"/>
 		<Metadata name="Configuration.ОбщественныйФонд.ClientApplicationInterface" id="c4729e25-e655-4dca-86d4-8414eb893811.b" configVersion="405ea48673a0d54b933f7a00dbc2c3d100000000"/>
 		<Metadata name="Configuration.ОбщественныйФонд.CommandInterface" id="c4729e25-e655-4dca-86d4-8414eb893811.a" configVersion="7dbb66e09461594ba5f2da497e5e65a000000000"/>
 		<Metadata name="Configuration.ОбщественныйФонд.ExternalConnectionModule" id="c4729e25-e655-4dca-86d4-8414eb893811.5" configVersion="2a3c9c66dd528645a02c65f6b164412600000000"/>
-		<Metadata name="Configuration.ОбщественныйФонд.HomePageWorkArea" id="c4729e25-e655-4dca-86d4-8414eb893811.8" configVersion="264657ffcd07e745b942ac73f853da8d00000000"/>
+		<Metadata name="Configuration.ОбщественныйФонд.HomePageWorkArea" id="c4729e25-e655-4dca-86d4-8414eb893811.8" configVersion="a9d5897ad61e8445a3735d91772bf3b600000000"/>
 		<Metadata name="Configuration.ОбщественныйФонд.MainSectionCommandInterface" id="c4729e25-e655-4dca-86d4-8414eb893811.9" configVersion="0873deab14270d489bebf4f126ce785c00000000"/>
 		<Metadata name="Configuration.ОбщественныйФонд.MainSectionPicture" id="c4729e25-e655-4dca-86d4-8414eb893811.c" configVersion="f47cdf88e0fccd46b78863963f9b0bb700000000"/>
 		<Metadata name="Configuration.ОбщественныйФонд.ManagedApplicationModule" id="c4729e25-e655-4dca-86d4-8414eb893811.6" configVersion="d79b14a97c223c45a14c48236542fdca00000000"/>
@@ -869,8 +869,8 @@
 			<Metadata name="DataProcessor.ЛичныйСчет.Command.ЛичныйСчет" id="c25eca43-8634-439f-ae7f-cb225f504fbf"/>
 		</Metadata>
 		<Metadata name="DataProcessor.ЛичныйСчет.Command.ЛичныйСчет.CommandModule" id="c25eca43-8634-439f-ae7f-cb225f504fbf.2" configVersion="1b701eb30ef759448e79420f27bac1c000000000"/>
-		<Metadata name="DataProcessor.ЛичныйСчет.Form.Форма" id="0fc144a2-b688-4396-b46e-5375f70a853c" configVersion="bf8ed8e89f4ddf4ca8f72113e8416a2600000000"/>
-		<Metadata name="DataProcessor.ЛичныйСчет.Form.Форма.Form" id="0fc144a2-b688-4396-b46e-5375f70a853c.0" configVersion="661cb3696ffc9943ae5bf58a241d46a000000000"/>
+		<Metadata name="DataProcessor.ЛичныйСчет.Form.Форма" id="0fc144a2-b688-4396-b46e-5375f70a853c" configVersion="49e1bc4d1131974480c6b6adcf50ecd200000000"/>
+		<Metadata name="DataProcessor.ЛичныйСчет.Form.Форма.Form" id="0fc144a2-b688-4396-b46e-5375f70a853c.0" configVersion="637799461499434a9d090cb5fd9c230600000000"/>
 		<Metadata name="DataProcessor.НастройкиПользователей" id="f3750ea4-5f9e-4ab3-9495-3f182ecff407" configVersion="b40ec626b1a70e4785400deddfe76e5a00000000">
 			<Metadata name="DataProcessor.НастройкиПользователей.Command.ОчисткаНастроекПользователей" id="8e21374f-5a65-406c-856d-2040607da4bc"/>
 			<Metadata name="DataProcessor.НастройкиПользователей.Command.НастройкиПользователя" id="b1e45d36-08e9-430e-976b-03e6e3320c6a"/>
