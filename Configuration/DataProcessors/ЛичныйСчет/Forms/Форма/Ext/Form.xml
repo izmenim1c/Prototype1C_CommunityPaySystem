@@ -63,6 +63,28 @@
 					<ContextMenu name="дсСделкиУчастникСделкиКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="дсСделкиУчастникСделкиРасширеннаяПодсказка" id="19"/>
 				</LabelField>
+				<LabelField name="дсСделкиСуммаОборот" id="20">
+					<DataPath>дсСделки.СуммаTurnover</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма сделки</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="дсСделкиСуммаОборотКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="дсСделкиСуммаОборотРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="дсСделкиСуммаВОбщественныйФондОборот" id="23">
+					<DataPath>дсСделки.СуммаВОбщественныйФондTurnover</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В фонд</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="дсСделкиСуммаВОбщественныйФондОборотКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="дсСделкиСуммаВОбщественныйФондОборотРасширеннаяПодсказка" id="25"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>

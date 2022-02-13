@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.13">
 	<ConfigVersions>
-		<Metadata name="AccumulationRegister.Сделки" id="89b26e4b-10d7-46ed-8981-e4846818f200" configVersion="9c416b9ff63aad46b393a2f84f00472900000000">
+		<Metadata name="AccumulationRegister.Сделки" id="89b26e4b-10d7-46ed-8981-e4846818f200" configVersion="33cdc69a4c25b441a2b751e076fb777c00000000">
 			<Metadata name="AccumulationRegister.Сделки.Resource.СуммаВОбщественныйФонд" id="41b0ae24-89a9-4f45-9f88-37462eeaeb8d"/>
 			<Metadata name="AccumulationRegister.Сделки.Dimension.УчастникСделки" id="523629b6-cdde-4768-a566-04e3a3cc1e97"/>
 			<Metadata name="AccumulationRegister.Сделки.Resource.Сумма" id="965e6900-f39e-4cec-949c-c653d620fdf9"/>
@@ -867,8 +867,8 @@
 			<Metadata name="DataProcessor.ЛичныйСчет.Command.ЛичныйСчет" id="c25eca43-8634-439f-ae7f-cb225f504fbf"/>
 		</Metadata>
 		<Metadata name="DataProcessor.ЛичныйСчет.Command.ЛичныйСчет.CommandModule" id="c25eca43-8634-439f-ae7f-cb225f504fbf.2" configVersion="1b701eb30ef759448e79420f27bac1c000000000"/>
-		<Metadata name="DataProcessor.ЛичныйСчет.Form.Форма" id="0fc144a2-b688-4396-b46e-5375f70a853c" configVersion="e47671503121b4428546be331881e7ff00000000"/>
-		<Metadata name="DataProcessor.ЛичныйСчет.Form.Форма.Form" id="0fc144a2-b688-4396-b46e-5375f70a853c.0" configVersion="1246811cc6d0644e9331048b72e3a4cd00000000"/>
+		<Metadata name="DataProcessor.ЛичныйСчет.Form.Форма" id="0fc144a2-b688-4396-b46e-5375f70a853c" configVersion="bf8ed8e89f4ddf4ca8f72113e8416a2600000000"/>
+		<Metadata name="DataProcessor.ЛичныйСчет.Form.Форма.Form" id="0fc144a2-b688-4396-b46e-5375f70a853c.0" configVersion="661cb3696ffc9943ae5bf58a241d46a000000000"/>
 		<Metadata name="DataProcessor.НастройкиПользователей" id="f3750ea4-5f9e-4ab3-9495-3f182ecff407" configVersion="b40ec626b1a70e4785400deddfe76e5a00000000">
 			<Metadata name="DataProcessor.НастройкиПользователей.Command.ОчисткаНастроекПользователей" id="8e21374f-5a65-406c-856d-2040607da4bc"/>
 			<Metadata name="DataProcessor.НастройкиПользователей.Command.НастройкиПользователя" id="b1e45d36-08e9-430e-976b-03e6e3320c6a"/>
@@ -1373,8 +1373,8 @@
 		<Metadata name="Role.ЧтениеВариантовОтчетов.Rights" id="1e020429-ac68-46f4-b34c-c2c4a2b494f6.0" configVersion="867abbe0e5bdfb48b57f82fc16906e8f00000000"/>
 		<Metadata name="Role.ЧтениеВнешнихПользователей" id="f11ffcfd-3588-4785-b222-cebe80455303" configVersion="6334a4ad1bee0744b7a0d9e84ea7e2c400000000"/>
 		<Metadata name="Role.ЧтениеВнешнихПользователей.Rights" id="f11ffcfd-3588-4785-b222-cebe80455303.0" configVersion="24c7525590e4f2419e15305639deed1300000000"/>
-		<Metadata name="Role.кплБазовыеПава" id="f52a2946-6d27-4441-abde-938b2da19e4d" configVersion="42b2ed14d7133a478f1b8c96d6bc8a3100000000"/>
-		<Metadata name="Role.кплБазовыеПава.Rights" id="f52a2946-6d27-4441-abde-938b2da19e4d.0" configVersion="93d001e0bbe2d94e8badd98a49f8cf8400000000"/>
+		<Metadata name="Role.кплБазовыеПава" id="f52a2946-6d27-4441-abde-938b2da19e4d" configVersion="345ec7dd20a4624ba2ae0f9411477f8000000000"/>
+		<Metadata name="Role.кплБазовыеПава.Rights" id="f52a2946-6d27-4441-abde-938b2da19e4d.0" configVersion="4d2b639a89860846a2ab236def43e69a00000000"/>
 		<Metadata name="Role.кплИспользованиеОбработкиЛичныйСчет" id="f8e9c1d5-daf9-4ebb-b466-2629fc1bd12d" configVersion="7fb66ca5c6d0264c879f50f784e9254700000000"/>
 		<Metadata name="Role.кплИспользованиеОбработкиЛичныйСчет.Rights" id="f8e9c1d5-daf9-4ebb-b466-2629fc1bd12d.0" configVersion="396e4eb0689cca4fbe9560c8230574ce00000000"/>
 		<Metadata name="Role.кплЧтениеПроектов" id="70322ba2-9c07-4626-94a1-14f21a468e11" configVersion="30d8eca53f560740a910c4c1965e5b5200000000"/>
