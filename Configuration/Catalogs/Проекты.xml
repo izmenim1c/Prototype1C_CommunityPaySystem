@@ -41,7 +41,7 @@
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
-			<DescriptionLength>25</DescriptionLength>
+			<DescriptionLength>150</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
@@ -127,6 +127,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Form>ФормаПросмотраКапитализации</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
