@@ -4,6 +4,36 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>AccumulationRegister.кплРаспределениеСуммПоПроектам</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.кплРаспределениеСуммПоПроектам</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>AccumulationRegister.Сделки</name>
 		<right>
 			<name>Read</name>
@@ -15,7 +45,7 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonForm.ФормаРаспределенияСредствПоПроектам</name>
+		<name>CommonForm.кплФормаРаспределенияСредствПоПроектам</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

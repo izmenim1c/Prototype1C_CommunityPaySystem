@@ -582,7 +582,7 @@
 			<CommonForm>ФормаВариантаОтчета</CommonForm>
 			<CommonForm>ФормаНастроекОтчета</CommonForm>
 			<CommonForm>ФормаОтчета</CommonForm>
-			<CommonForm>ФормаРаспределенияСредствПоПроектам</CommonForm>
+			<CommonForm>кплФормаРаспределенияСредствПоПроектам</CommonForm>
 			<Catalog>ВариантыОтчетов</Catalog>
 			<Catalog>ВерсииРасширений</Catalog>
 			<Catalog>ВнешниеПользователи</Catalog>
@@ -599,6 +599,7 @@
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>ФизическиеЛица</Catalog>
 			<Document>СделкаМеждуФизическимиЛицами</Document>
+			<Document>кплРаспределениеСуммПоПроектам</Document>
 			<Enum>ДоступныеПериодыОтчета</Enum>
 			<Enum>СпособыРедактированияЭлектронныхПисем</Enum>
 			<Enum>ТипыДанныхКэшаПрограммныхИнтерфейсов</Enum>
@@ -642,6 +643,7 @@
 			<InformationRegister>УровниСокращенийАдресныхСведений</InformationRegister>
 			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
 			<AccumulationRegister>Сделки</AccumulationRegister>
+			<AccumulationRegister>кплРаспределениеСуммПоПроектам</AccumulationRegister>
 			<BusinessProcess>БизнесПроцесс1</BusinessProcess>
 			<Task>Задача1</Task>
 			<Task>Задача2</Task>

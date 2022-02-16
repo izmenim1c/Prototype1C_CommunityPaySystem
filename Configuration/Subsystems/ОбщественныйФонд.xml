@@ -20,6 +20,8 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЛичныйСчет</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПроцентОтчисленияВОбщественныйФондОтСуммыСделки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.кплРаспределениеСуммПоПроектам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.кплРаспределениеСуммПоПроектам</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
