@@ -120,38 +120,33 @@
 				<ExtendedTooltip name="дсСделкиУправлениеПоискомРасширеннаяПодсказка" id="16"/>
 			</SearchControlAddition>
 			<ChildItems>
+				<LabelField name="дсСделкиДата" id="50">
+					<DataPath>дсСделки.Дата</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="дсСделкиДатаКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="дсСделкиДатаРасширеннаяПодсказка" id="52"/>
+				</LabelField>
 				<LabelField name="дсСделкиУчастникСделки" id="17">
 					<DataPath>дсСделки.УчастникСделки</DataPath>
 					<ContextMenu name="дсСделкиУчастникСделкиКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="дсСделкиУчастникСделкиРасширеннаяПодсказка" id="19"/>
 				</LabelField>
-				<LabelField name="дсСделкиСуммаОборот" id="20">
-					<DataPath>дсСделки.СуммаTurnover</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Сумма сделки</v8:content>
-						</v8:item>
-					</Title>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<MaxWidth>50</MaxWidth>
-					<HorizontalStretch>true</HorizontalStretch>
-					<ContextMenu name="дсСделкиСуммаОборотКонтекстноеМеню" id="21"/>
-					<ExtendedTooltip name="дсСделкиСуммаОборотРасширеннаяПодсказка" id="22"/>
+				<LabelField name="дсСделкиСуммаСделки" id="53">
+					<DataPath>дсСделки.СуммаСделки</DataPath>
+					<Width>15</Width>
+					<ContextMenu name="дсСделкиСуммаСделкиКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="дсСделкиСуммаСделкиРасширеннаяПодсказка" id="55"/>
 				</LabelField>
-				<LabelField name="дсСделкиСуммаВОбщественныйФондОборот" id="23">
-					<DataPath>дсСделки.СуммаВОбщественныйФондTurnover</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>В фонд</v8:content>
-						</v8:item>
-					</Title>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<MaxWidth>50</MaxWidth>
-					<HorizontalStretch>true</HorizontalStretch>
-					<ContextMenu name="дсСделкиСуммаВОбщественныйФондОборотКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="дсСделкиСуммаВОбщественныйФондОборотРасширеннаяПодсказка" id="25"/>
+				<LabelField name="дсСделкиВОбщественныйФонд" id="56">
+					<DataPath>дсСделки.ВОбщественныйФонд</DataPath>
+					<Width>20</Width>
+					<ContextMenu name="дсСделкиВОбщественныйФондКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="дсСделкиВОбщественныйФондРасширеннаяПодсказка" id="58"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -174,15 +169,28 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрНакопленияСделкиОбороты.ПериодДень КАК Дата,
+	РегистрНакопленияСделкиОбороты.УчастникСделки КАК УчастникСделки,
+	РегистрНакопленияСделкиОбороты.СуммаОборот КАК СуммаСделки,
+	РегистрНакопленияСделкиОбороты.СуммаВОбщественныйФондОборот КАК ВОбщественныйФонд
+ИЗ
+	РегистрНакопления.Сделки.Обороты(, , Авто, ) КАК РегистрНакопленияСделкиОбороты</QueryText>
 				<MainTable>AccumulationRegister.Сделки.Turnovers</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<GetInvisibleFieldPresentations>false</GetInvisibleFieldPresentations>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>

@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
-	<AutoCommandBar name="" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
@@ -68,16 +72,26 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<LabelField name="Наименование" id="16">
-					<DataPath>Список.Description</DataPath>
-					<DefaultItem>true</DefaultItem>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
+				<LabelField name="Наименование" id="28">
+					<DataPath>Список.Наименование</DataPath>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="30"/>
 				</LabelField>
 				<LabelField name="Ответственный" id="19">
 					<DataPath>Список.Ответственный</DataPath>
 					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<LabelField name="ВыУжеВнесли" id="25">
+					<DataPath>Список.ВыУжеВнесли</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вы уже внесли, руб.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ВыУжеВнеслиКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ВыУжеВнеслиРасширеннаяПодсказка" id="27"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -89,8 +103,27 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникПроекты.Наименование КАК Наименование,
+	СправочникПроекты.Ответственный КАК Ответственный,
+	ВложенныйЗапрос.ВыУжеВнесли КАК ВыУжеВнесли
+ИЗ
+	Справочник.Проекты КАК СправочникПроекты
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			СУММА(кплРаспределениеСуммПоПроектамОбороты.СуммаОборот) КАК ВыУжеВнесли,
+			кплРаспределениеСуммПоПроектамОбороты.УчастникСделки КАК УчастникСделки,
+			кплРаспределениеСуммПоПроектамОбороты.Проект КАК Проект
+		ИЗ
+			РегистрНакопления.кплРаспределениеСуммПоПроектам.Обороты КАК кплРаспределениеСуммПоПроектамОбороты
+		ГДЕ
+			кплРаспределениеСуммПоПроектамОбороты.УчастникСделки = &amp;УчастникСделки
+		
+		СГРУППИРОВАТЬ ПО
+			кплРаспределениеСуммПоПроектамОбороты.УчастникСделки,
+			кплРаспределениеСуммПоПроектамОбороты.Проект) КАК ВложенныйЗапрос
+		ПО СправочникПроекты.Ссылка = ВложенныйЗапрос.Проект</QueryText>
 				<MainTable>Catalog.Проекты</MainTable>
 				<ListSettings>
 					<dcsset:filter>

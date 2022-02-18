@@ -292,8 +292,8 @@
 			<Metadata name="Catalog.Проекты.TabularSection.Отзывы.Attribute.Отзыв" id="9ccab2f7-8a83-4ef4-8a53-523859021265"/>
 			<Metadata name="Catalog.Проекты.TabularSection.Отзывы.Attribute.Пользователь" id="dc9cd260-8c87-4e22-970f-579a4d3fb33f"/>
 		</Metadata>
-		<Metadata name="Catalog.Проекты.Form.ФормаПросмотраКапитализации" id="919a6014-fe2b-4c9d-8a47-43e3d478680b" configVersion="60f805b5836dc34b9bae351c53e3eeff00000000"/>
-		<Metadata name="Catalog.Проекты.Form.ФормаПросмотраКапитализации.Form" id="919a6014-fe2b-4c9d-8a47-43e3d478680b.0" configVersion="dddb5b06da1f9a4e8fffa334c428e42300000000"/>
+		<Metadata name="Catalog.Проекты.Form.ФормаПросмотраКапитализации" id="919a6014-fe2b-4c9d-8a47-43e3d478680b" configVersion="6157cdc59d52d9438f3d4bd908aa46af00000000"/>
+		<Metadata name="Catalog.Проекты.Form.ФормаПросмотраКапитализации.Form" id="919a6014-fe2b-4c9d-8a47-43e3d478680b.0" configVersion="f32507fb8dafd64d89d3a603afd300e500000000"/>
 		<Metadata name="Catalog.Проекты.Form.ФормаЭлемента" id="c25f25b9-d35d-4358-845e-345ab3b213c0" configVersion="99a205abb9788e4fa24e824b1c08d2e100000000"/>
 		<Metadata name="Catalog.Проекты.Form.ФормаЭлемента.Form" id="c25f25b9-d35d-4358-845e-345ab3b213c0.0" configVersion="99483fdfc11bc34fabb8af95bc6b9a8300000000"/>
 		<Metadata name="Catalog.ФизическиеЛица" id="f1c54196-b27e-4ae4-adf0-b1a2adeaaf2c" configVersion="f030cf71948ede4eb6da0dfff469840100000000"/>
@@ -882,8 +882,8 @@
 			<Metadata name="DataProcessor.ЛичныйСчет.Command.ЛичныйСчет" id="c25eca43-8634-439f-ae7f-cb225f504fbf"/>
 		</Metadata>
 		<Metadata name="DataProcessor.ЛичныйСчет.Command.ЛичныйСчет.CommandModule" id="c25eca43-8634-439f-ae7f-cb225f504fbf.2" configVersion="1b701eb30ef759448e79420f27bac1c000000000"/>
-		<Metadata name="DataProcessor.ЛичныйСчет.Form.Форма" id="0fc144a2-b688-4396-b46e-5375f70a853c" configVersion="b1b5d24105e01d4594edd3e870b5f82b00000000"/>
-		<Metadata name="DataProcessor.ЛичныйСчет.Form.Форма.Form" id="0fc144a2-b688-4396-b46e-5375f70a853c.0" configVersion="1d4707e05c095748867d489e3a53995200000000"/>
+		<Metadata name="DataProcessor.ЛичныйСчет.Form.Форма" id="0fc144a2-b688-4396-b46e-5375f70a853c" configVersion="bfd8cf95a46a1441b3bc523dd763e05d00000000"/>
+		<Metadata name="DataProcessor.ЛичныйСчет.Form.Форма.Form" id="0fc144a2-b688-4396-b46e-5375f70a853c.0" configVersion="45a0e7f6efd18d448795d1f7deda7e0200000000"/>
 		<Metadata name="DataProcessor.НастройкиПользователей" id="f3750ea4-5f9e-4ab3-9495-3f182ecff407" configVersion="b40ec626b1a70e4785400deddfe76e5a00000000">
 			<Metadata name="DataProcessor.НастройкиПользователей.Command.ОчисткаНастроекПользователей" id="8e21374f-5a65-406c-856d-2040607da4bc"/>
 			<Metadata name="DataProcessor.НастройкиПользователей.Command.НастройкиПользователя" id="b1e45d36-08e9-430e-976b-03e6e3320c6a"/>
@@ -1395,8 +1395,8 @@
 		<Metadata name="Role.ЧтениеВариантовОтчетов.Rights" id="1e020429-ac68-46f4-b34c-c2c4a2b494f6.0" configVersion="867abbe0e5bdfb48b57f82fc16906e8f00000000"/>
 		<Metadata name="Role.ЧтениеВнешнихПользователей" id="f11ffcfd-3588-4785-b222-cebe80455303" configVersion="6334a4ad1bee0744b7a0d9e84ea7e2c400000000"/>
 		<Metadata name="Role.ЧтениеВнешнихПользователей.Rights" id="f11ffcfd-3588-4785-b222-cebe80455303.0" configVersion="24c7525590e4f2419e15305639deed1300000000"/>
-		<Metadata name="Role.кплБазовыеПава" id="f52a2946-6d27-4441-abde-938b2da19e4d" configVersion="ab14d70460e9564980a334c7be69e58200000000"/>
-		<Metadata name="Role.кплБазовыеПава.Rights" id="f52a2946-6d27-4441-abde-938b2da19e4d.0" configVersion="859eebd256c6f9428d402dc2c30e63f700000000"/>
+		<Metadata name="Role.кплБазовыеПава" id="f52a2946-6d27-4441-abde-938b2da19e4d" configVersion="551d5db161625e4f9942c25a01b8479900000000"/>
+		<Metadata name="Role.кплБазовыеПава.Rights" id="f52a2946-6d27-4441-abde-938b2da19e4d.0" configVersion="deb03b1ef6c91440862cfd0fb7e8517d00000000"/>
 		<Metadata name="Role.кплИспользованиеОбработкиЛичныйСчет" id="f8e9c1d5-daf9-4ebb-b466-2629fc1bd12d" configVersion="7fb66ca5c6d0264c879f50f784e9254700000000"/>
 		<Metadata name="Role.кплИспользованиеОбработкиЛичныйСчет.Rights" id="f8e9c1d5-daf9-4ebb-b466-2629fc1bd12d.0" configVersion="396e4eb0689cca4fbe9560c8230574ce00000000"/>
 		<Metadata name="Role.кплЧтениеПроектов" id="70322ba2-9c07-4626-94a1-14f21a468e11" configVersion="dfefea0a4f992944a4898c3aef230b0e00000000"/>
